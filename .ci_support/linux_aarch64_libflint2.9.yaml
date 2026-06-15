@@ -23,6 +23,6 @@ libboost_devel:
 libeantic:
 - '2'
 libflint:
-- '3.0'
+- '2.9'
 target_platform:
-- linux-ppc64le
+- linux-aarch64
