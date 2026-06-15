@@ -31,6 +31,15 @@ jobs:
             tools_install_dir: ~/miniforge3
             build_workspace_dir: build_artifacts
             docker_run_args: 
+          - CONFIG: linux_aarch64_libflint2.9
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+            tools_install_dir: ~/miniforge3
+            build_workspace_dir: build_artifacts
+            docker_run_args: 
           - CONFIG: linux_aarch64_libflint3.0
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
@@ -58,25 +67,7 @@ jobs:
             tools_install_dir: ~/miniforge3
             build_workspace_dir: build_artifacts
             docker_run_args: 
-          - CONFIG: linux_aarch64_libflint3.3
-            STORE_BUILD_ARTIFACTS: False
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-            tools_install_dir: ~/miniforge3
-            build_workspace_dir: build_artifacts
-            docker_run_args: 
-          - CONFIG: linux_aarch64_libflint3.4
-            STORE_BUILD_ARTIFACTS: False
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-            tools_install_dir: ~/miniforge3
-            build_workspace_dir: build_artifacts
-            docker_run_args: 
-          - CONFIG: linux_aarch64_libflint3.5
+          - CONFIG: linux_ppc64le_libflint2.9
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             os: ubuntu
@@ -104,33 +95,6 @@ jobs:
             build_workspace_dir: build_artifacts
             docker_run_args: 
           - CONFIG: linux_ppc64le_libflint3.2
-            STORE_BUILD_ARTIFACTS: False
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-            tools_install_dir: ~/miniforge3
-            build_workspace_dir: build_artifacts
-            docker_run_args: 
-          - CONFIG: linux_ppc64le_libflint3.3
-            STORE_BUILD_ARTIFACTS: False
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-            tools_install_dir: ~/miniforge3
-            build_workspace_dir: build_artifacts
-            docker_run_args: 
-          - CONFIG: linux_ppc64le_libflint3.4
-            STORE_BUILD_ARTIFACTS: False
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-            tools_install_dir: ~/miniforge3
-            build_workspace_dir: build_artifacts
-            docker_run_args: 
-          - CONFIG: linux_ppc64le_libflint3.5
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             os: ubuntu

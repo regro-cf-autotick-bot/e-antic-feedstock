@@ -1,5 +1,7 @@
 antic:
 - '0.2'
+arb:
+- '2.23'
 c_stdlib:
 - sysroot
 c_stdlib_version:
@@ -21,6 +23,6 @@ libboost_devel:
 libeantic:
 - '2'
 libflint:
-- '3.3'
+- '2.9'
 target_platform:
 - linux-aarch64
